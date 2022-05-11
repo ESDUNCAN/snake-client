@@ -1,7 +1,6 @@
-const { connectToSnake } = require("./client.js")
-const { setupInput } = require("./input.js")
+const { connectToSnake } = require("./client")
+const { setupInput } = require("./input")
 
 
 
-connectToSnake()
-setupInput()
+setupInput(connectToSnake())
