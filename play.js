@@ -1,7 +1,5 @@
-const net = require("net");
-const { connect } = require("./client.js")
+
+const { connectToSnake } = require("./client.js")
 
 
-
-console.log("Connecting ...");
-connect("you ded cuz you idled");
+connectToSnake()
