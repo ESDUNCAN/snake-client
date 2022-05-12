@@ -1,4 +1,5 @@
 const net = require("net");
+const { IP, PORT } = require("./constants");
 
 
 // establishes a connection with the game server
@@ -13,10 +14,7 @@ const connectToSnake = function () {
   conn.on("connect", () => {
     console.log("Connection Worked")
     conn.write('Name: ESD');
-    conn.write("Move: up")
-    conn.write("Move: right")
-    conn.write("Move: down")
-    conn.write("Move: left")
+    conn.write("Say: WAZZZUP")
   })
 
 
